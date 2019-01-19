@@ -1,5 +1,6 @@
 # TODO: Investigate utilising set objects instead to speed up the search
 
+
 def frequnecy_repeat():
     input_file = 'aoc-day1.1-input.txt'
     output_file = 'aoc-day1.2-output.txt'
@@ -9,7 +10,7 @@ def frequnecy_repeat():
 
     with open(input_file, 'r') as in_file:
         file = in_file.read()
-        number_list = file.split('\n')
+        number_set = set((file.split('\n')))
 
         # Test cases
         # number_list = ['+1', '-1']
@@ -18,7 +19,7 @@ def frequnecy_repeat():
         # number_list = [+7, +7, -2, -7, -4]
 
         while found_number is False:
-            for number in number_list:
+            for number in number_set:
                 base_frequency += int(number)
 
                 if base_frequency in frequency_list:
