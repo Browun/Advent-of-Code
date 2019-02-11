@@ -2,7 +2,7 @@
 
 
 def frequnecy_repeat():
-    input_file = 'aoc-day1.1-input.txt'
+    input_file = 'aoc-day1-input.txt'
     output_file = 'aoc-day1.2-output.txt'
     base_frequency = 0
     frequency_list = [0]

@@ -1,5 +1,5 @@
 def frequency_change():
-    input_file = 'aoc-day1.1-input.txt'
+    input_file = 'aoc-day1-input.txt'
     output_file = 'aoc-day1.1-output.txt'
     base_frequency = 0
 

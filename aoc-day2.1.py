@@ -1,5 +1,5 @@
 def letter_repeat():
-    input_file = 'aoc-day2.1-input.txt'
+    input_file = 'aoc-day2-input.txt'
     output_file = 'aoc-day2.1-output.txt'
 
     with open(input_file, 'r') as in_file:
