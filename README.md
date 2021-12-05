@@ -5,7 +5,6 @@ This year I attempted to complete the [Advent of Code](https://adventofcode.com 
 
 I will only utilise in-built Python methods, to try and push myself to get the most from the language without utilising any external dependancies.
 
-
 ## Challenge
 
 ### Prologue
@@ -23,14 +22,15 @@ ___
 ### Day 1
 
 #### Part 1
+
 > After feeling like you've been falling for a few minutes, you look at the device's tiny screen. "Error: Device must be calibrated before first use. Frequency drift detected. Cannot maintain destination lock." Below the message, the device shows a sequence of changes in frequency (your puzzle input). A value like +6 means the current frequency increases by 6; a value like -3 means the current frequency decreases by 3.
 >
 > For example, if the device displays frequency changes of +1, -2, +3, +1, then starting from a frequency of zero, the following changes would occur:
 >
->   >   Current frequency  0, change of +1; resulting frequency  1.   
->   >   Current frequency  1, change of -2; resulting frequency -1.   
->   >   Current frequency -1, change of +3; resulting frequency  2.   
->   >   Current frequency  2, change of +1; resulting frequency  3.   
+>   >   Current frequency  0, change of +1; resulting frequency  1.
+>   >   Current frequency  1, change of -2; resulting frequency -1.
+>   >   Current frequency -1, change of +3; resulting frequency  2.
+>   >   Current frequency  2, change of +1; resulting frequency  3.
 >
 > In this example, the resulting frequency is 3.
 >
@@ -69,16 +69,16 @@ ___
 
 ### Day 2
 
-#### Part 1 
+#### Part 1
 
 --- Day 2: Inventory Management System ---
 
 > You stop falling through time, catch your breath, and check the screen on the device. "Destination reached. Current Year: 1518. Current Location: North Pole Utility Closet 83N10." You made it! Now, to find those anomalies.
-> 
+>
 > Outside the utility closet, you hear footsteps and a voice. "...I'm not sure either. But now that so many people have chimneys, maybe he could sneak in that way?" Another voice responds, "Actually, we've been working on a new kind of suit that would let him fit through tight spaces like that. But, I heard that a few days ago, they lost the prototype fabric, the design plans, everything! Nobody on the team can even seem to remember important details of the project!"
 >
 > "Wouldn't they have had enough fabric to fill several boxes in the warehouse? They'd be stored together, so the box IDs should be similar. Too bad it would take forever to *search the warehouse for two similar box IDs*..." They walk too far away to hear any more.
- 
+
 > Late at night, you sneak to the warehouse - who knows what kinds of paradoxes you could cause if you were discovered - and use your fancy wrist device to quickly scan every box and produce a list of the likely candidates (your puzzle input).
 >
 > To make sure you didn't miss any, you scan the likely candidate boxes again, counting the number that have an ID containing exactly two of any letter and then separately counting those with exactly three of any letter. You can multiply those two counts together to get a rudimentary checksum and compare it to what your device predicts.
@@ -92,7 +92,7 @@ ___
 >    > `aabcdd` contains two a and two d, but it only counts once.
 >    > `abcdee` contains two e.
 >    > `ababab` contains three a and three b, but it only counts once.
-> 
+>
 > Of these box IDs, four of them contain a letter which appears exactly twice, and three of them contain a letter which appears exactly three times. Multiplying these together produces a checksum of 4 * 3 = 12.
 >
 > What is the checksum for your list of box IDs?
@@ -134,11 +134,11 @@ ___
 > ...........
 >
 > The problem is that many of the claims overlap, causing two or more claims to cover part of the same areas. For example, consider the following claims:
-> 
+>
 > #1 @ 1,3: 4x4
 > #2 @ 3,1: 4x4
 > #3 @ 5,5: 2x2
-> 
+>
 > Visually, these claim the following areas:
 >
 > ........
@@ -149,8 +149,8 @@ ___
 > .111133.
 > .111133.
 > ........
-> 
+>
 > The four square inches marked with X are claimed by both 1 and 2. (Claim 3, while adjacent to the others, does not overlap either of them.)
-> 
+>
 > If the Elves all proceed with their own plans, none of them will have enough fabric. How many square inches of fabric are within two or more claims?
-> 
+>

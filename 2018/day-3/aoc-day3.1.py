@@ -25,8 +25,8 @@ def return_dimensions(fabric_height, fabric_width, fabric_value):
 
 def elf_suggestions(suggestion, fabric_width, fabric):
     '''
-    For every elf suggestion of the fabric cut, extract values, calculate the area it covers, 
-    and look for these values in the fabric, if present remove, else plus one to the 
+    For every elf suggestion of the fabric cut, extract values, calculate the area it covers,
+    and look for these values in the fabric, if present remove, else plus one to the
     number_of_multiple_claims
     '''
     pattern = r'(#\d+) @ (\d+),(\d+): (\d+)x(\d+)'
@@ -49,7 +49,6 @@ def elf_suggestions(suggestion, fabric_width, fabric):
                 fabric[value] += 1
 
     return fabric
-
 
 
 def part_1(fabric_height=1000, fabric_width=1000, fabric_value=[0]):
@@ -112,7 +111,7 @@ if __name__ == '__main__':
     fabric_height = 1000
     fabric_width = 1000
     print(
-          part_1(fabric_height=fabric_height, 
+          part_1(fabric_height=fabric_height,
                fabric_width=fabric_width),
           part_2(fabric_height=fabric_height,
                 fabric_width=fabric_width,
