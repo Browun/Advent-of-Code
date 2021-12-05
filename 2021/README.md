@@ -23,3 +23,15 @@
 - Up minuses from depth
 
 - Find horizontal and vertical position, multiply together
+
+### Part 2
+
+- Find horizontal, vertical, and aim, multiplying horizontal and vertical together
+- vertical is now set by aim * input value
+
+## Day 3 - Binary Diagnostic
+
+- Power consumption
+- Use input to generate Gamma and Epsilon, power consumption = gamma * epsilon
+- Gamma is the most common bit in the corresponding position, for each of the columns
+- Epsilon is the oppsotte of the Gamma, with the least common bit
