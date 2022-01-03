@@ -22,3 +22,5 @@ def rows_to_columns(data: list[str]) -> list[str]:
 		# print(f"Index: {value_index}\nLatest value: {output[-1]}")
 
 	return output
+
+# TODO: Add a rows_to_columns that allows casting to integer

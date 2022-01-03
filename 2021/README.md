@@ -35,3 +35,9 @@
 - Use input to generate Gamma and Epsilon, power consumption = gamma * epsilon
 - Gamma is the most common bit in the corresponding position, for each of the columns
 - Epsilon is the oppsotte of the Gamma, with the least common bit
+
+### Part 2
+
+- Life support = Oxygen generator * CO2 scrubber
+- Oxygen generator = most common in columns keep those preferring 1
+- CO2 = lest common in columns keep those preferring 0
